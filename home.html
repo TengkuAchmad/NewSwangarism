@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swangarism | Web Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/modal-side-css.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sidepanel.js"></script>
+    <script src="js/autoscroll.js"></script>
+</head>
+    <body>
+        <div id="jsScroll" class="scroll" onclick="scrollToTop();">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        <!-- Navbar -->
+        <section id="navbar">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-transparent mr-5 ml-5 mt-2 mb-3">
+                <!-- Logo -->
+                <a class="navbar-brand" href="home.html">
+                    <img src="img/logo.jpeg" alt="" style="width: 200px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Search Form -->
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Bakso Malang" aria-label="Search">
+                  <span class="input-group-append">
+                    <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
+                        <i><img src="img/Search Icon 2 .png" style="width: 25px; height: 25px;" alt=""></i>
+                    </button>
+                    </span>
+                </form>
+                
+                <!-- Navbar -->
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link swangarism" aria-current="page" href="home.html" style="font-size:25px;">BERANDA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link swangarism" href="kategori.html" style="font-size:25px;">KATEGORI</a>
+                      </li>
+                      <li class="nav-item swangarism">
+                        <a class="nav-link" href="localsnack.html" style="font-size:25px;">JAJANAN LOKAL</a>
+                      </li>
+                      <li class="nav-item swangarism">
+                        <a class="nav-link" href="toko.html" style="font-size:25px;">TOKO</a>
+                      </li>			
+                    </ul>
+                    <a class="navbar-brand" href="#">
+                        <img onclick="openNav()" src="img/Cart Icon 3.png" width="30" height="30" alt="">
+                    </a>		  
+                </div>
+              </nav>
+        </section>
+
+        <!-- Hero -->
+        <section id="hero" style="margin-bottom: 50px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-7">
+                        <div style="margin-left:80px; margin-right:0px;">
+                                <h1 class="display-2 swangarism"><b>Sate Klatak<br>Yogyakarta</b></h1>
+                                <h4>Sate khas Yogyakarta dengan bumbu spesial ditambah daging yang lembut taste terbaik di setiap gigitan</h4>
+                                <br>
+                                <a href="productdetails.html"><button type="button" class="btn btn-lg btn-brown rounded-pill">Beli Sekarang</button></a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="img/Card1.png" alt="Sate Klatak" style="width: 32rem;">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="img/Card1.png" alt="Sate Klatak" style="width: 32rem;">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="img/Card1.png" alt="Sate Klatak" style="width: 32rem;">
+                                </div>
+                              </div>
+                            
+                              <!-- Left and right controls/icons -->
+                              <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content">
+            <div class="container"  style="margin-left: 80px; margin-right: 60px">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="allproduct.html"><img src="img/cad/Cardgif1.gif" style="border-radius: 12px;" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="makananbeku.html"><img src="img/cad/Card2.png" style="border-radius: 12px;" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <a href="kulinernus.html"><img src="img/cad/Card3.png" style="border-radius: 12px;"alt=""></a>
+                        </div>
+                        <div class="row">
+                            <a href="productdetails.html"><img src="img/cad/Card4.png" style="border-radius: 12px;"alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalog">
+            <div class="container-fluid" style="margin-left: 80px; margin-top: 40px;">
+                <div class="row">
+                    <div class="col-2" style="padding: 2px;">
+                        <div class="textbox" style="margin-top:20px;">
+                            <div class="textinbox"><br>
+                                <h5>Snacks From All Over Indonesia</h5>
+                                <p>Snacks Various city snacks throughout the archipelago are present at Swangarism, don't miss it</p>
+                                <button type="button" class="btn btn-sm btn-light rounded-2">See more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 carouselbox" style="padding-left: 0px;">
+                        <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row carouselitem">
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/bali.png" alt="Bali"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/bandung.png" alt="Bandung"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/jakarta.png" alt="Jakarta"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/kediri.png" alt="Kediri"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/banyuwangi.png" alt="Banyuwangi"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/bogor.png" alt="Bogor"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row carouselitem">
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/cirebon.png" alt="Cirebon"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/purwokerto.png" alt="Purwokerto"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/semarang.png" alt="Semarang"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/surabaya.png" alt="Surabaya"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/medan.png" alt="Medan"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/purwokerto.png" alt="Purwokerto"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row carouselitem">
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/solo.png" alt="Solo"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/makassar.png" alt="Makassar"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/madiun.png" alt="Madiun"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/sidoarjo.png" alt="sidoarjo"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/tasikmalaya.png" alt="Tasikmalaya"></a>
+                                        </div>
+                                        <div class="col-2">
+                                            <a href="kulinernus.html"><img src="img/kota/jogja.png" alt="Jogja"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="localsnack.htmldemo2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="topsale">
+            <div class="container"  style="margin-left: 80px; margin-right: 60px; margin-top: 40px;"><br>
+                <h4 style="color: white;">TOP SALE</h4>
+                <div class="linebox"></div>
+                <div class="row boxtopsale">
+                    <div class="col-3">
+                        <img src="img/topsale/side.png" alt="">
+                        <div class="boxseeall">
+                            <img src="img/COD.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-3 colspace">
+                                <div class="boxproduct">
+                                    <img src="img/topsale/product/1.jpg" style="border-radius:20px;" alt="">
+                                    <div class="teks-produk">
+                                        <h6>Joyfood Chicken Str...</h6>
+                                        <h6><b>Rp 35.000 - Rp 88.500</b></h6>
+                                        <a href="productdetails.html"><button type="button" class="btn btn-sm btn-danger rounded-2">View Product</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 colspace">
+                                <div class="boxproduct">
+                                    <img src="img/topsale/product/2.jpg" style="border-radius:20px;" alt="">
+                                    <div class="teks-produk">
+                                        <h6>Lupis Prayan by Mi...</h6>
+                                        <h6><b>Rp 35.000</b></h6>
+                                        <a href="productdetails.html"><button type="button" class="btn btn-sm btn-danger rounded-2">View Product</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 colspace">
+                                <div class="boxproduct">
+                                    <img src="img/topsale/product/3.jpg" style="border-radius:20px;" alt="">
+                                    <div class="teks-produk">
+                                        <h6>Roti Maryam Original</h6>
+                                        <h6><b>Rp 40.000</b></h6>
+                                        <a href="productdetails.html"><button type="button" class="btn btn-sm btn-danger rounded-2">View Product</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 colspace">
+                                <div class="boxproduct">
+                                    <img src="img/topsale/product/4.jpg" style="border-radius:20px;" alt="">
+                                    <div class="teks-produk">
+                                        <h6>Siomay Bandung (Froz...</h6>
+                                        <h6><b>Rp 27.500</b></h6>
+                                        <a href="productdetails.html"><button type="button" class="btn btn-sm btn-danger rounded-2">View Product</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 colspace">
+                                <div class="boxproduct">
+                                    <img src="img/topsale/product/5.jpg" style="border-radius:20px;" alt="">
+                                    <div class="teks-produk">
+                                        <h6>Shrimp Roll (Froz...</h6>
+                                        <h6><b>Rp 36 000</b></h6>
+                                        <a href="productdetails.html"><button type="button" class="btn btn-sm btn-danger rounded-2">View Product</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 colspace">
+                                <div class="boxproduct">
+                                    <img src="img/topsale/product/6.jpg" style="border-radius:20px;" alt="">
+                                    <div class="teks-produk">
+                                        <h6>Empal Suwir (200gr...</h6>
+                                        <h6><b>Rp 90.000</b></h6>
+                                        <a href="productdetails.html"><button type="button" class="btn btn-sm btn-danger rounded-2">View Product</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="footer">
+            <div class="container"  style="margin-left: 80px; margin-right: 60px; margin-top: 40px;"><br>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="lineborder"></div>
+                    </div>
+                    <div class="col-4" style="text-align: center;">
+                        <h4 class="swangarism">KENAPA SWANGARISM</h4>
+                    </div>
+                    <div class="col-4">
+                        <div class="lineborder"></div>
+                    </div>
+                    <br><br><br>
+                    <div class="col-3" style="text-align:center">
+                        <h5>Jaminan Makanan Aman</h5>
+                        <p>Makanan Kamu Pasti Terjamin*. No Was Was</p>
+                    </div>
+                    <div class="col-3" style="text-align:center">
+                        <h5>Penanganan Makanan Beku</h5>
+                        <p>Penanganan khusus makanan beku dengan fasilitas pendingin</p>
+                    </div>
+                    <div class="col-3" style="text-align:center">
+                        <h5>Mendukung UMKM Lokal</h5>
+                        <p>Dengan berbelanja di PaxelMarket, Kamu turut mendukung ratusan UMKM Lokal</p>
+                    </div>
+                    <div class="col-3" style="text-align:center">
+                        <h5>Ongkir Flat Mulai 10K*</h5>
+                        <p>Kamu bisa mendapatkan FLAT ONGKIR mulai dari 10K ke seluruh area Paxel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxfooter">
+                <div class="row">
+                    <div class="col-6"  style="margin-top:50px;">
+                        <img src="img/logofooter.jpeg" alt="" style="width: 300px; margin-left: 80px; border-radius: 20px;">
+                    </div>
+                    <div class="col-6"  style="margin-top:50px;">
+                        <div class="row">
+                            <h2>Download Swangarism App</h2>
+                        </div>
+                        <div class="row">
+                            <p>Akses Swangarism melalui aplikasi Paxel di perangkat Android atau iOS Kamu</p>
+                        </div>  
+                        <div class="row">
+                            <div class="col-3" style="padding: 0;">
+                               <a href="https://play.google.com/store"><img src="img/v423_8.png" alt="" style="width: 200px;"></a> 
+                            </div>
+                            <div class="col-3" style="padding:0; margin-left: 20px;">
+                                <a href="https://play.google.com/store"><img src="img/v423_10.png" alt="" style="width: 200px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxcontact">
+                <div class="row">
+                    <div class="col-6">
+                        <div style="margin-left: 80px;">
+                            <div class="row" style="margin-top: 20px; text-align:start;">
+                                <div class="col-2" style="padding: 0px;">
+                                    <a href="aboutus.html"><h6>ABOUT US</h6></a>
+                                </div>
+                                <div class="col-1" style="padding: 0px;">
+                                    <a href="#"><h6>FAQ</h6></a>
+                                </div>
+                                <div class="col-3" style="padding: 0px;">
+                                    <a href="#"><h6>KEBIJAKAN PRIVASI</h6></a>
+                                </div>
+                                <div class="linefooter"></div>
+                                <div style="padding-left: 0px; margin-top: 5px;">
+                                    © 2022 <strong>Swangarism</strong>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/logoclear.png" alt="" style="width: 200px; margin-top: 15px; margin-left: 200px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sidepanel">
+            <div id="mySidepanel" class="sidepanel" style="width: 350px;">
+                <a href="javascript:void(0)" class="closebtn2" onclick="closeNav()">
+                    <i class="fa fa-chevron-circle-right" style="font-size: 40px;"></i>
+                </a>
+                <div class="row text-center justify-content-center">
+                    <h5><strong>CART</strong></h5>
+                    <div class="lineboxside"></div>
+                </div>
+                <div class="row ml-4 mt-4 text-center justify-content-center">
+                    <div class="col-4">
+                        <img class="imagecart"src="img/productdtls/P1.jpg" alt="">
+                    </div>
+                    <div class="col-7 text-start">
+                        Paket Combo Dessert Box Jumbo 8x18 (Pre-Order) - OREO + Gratis Tiramisu
+                        <p style="font-size:10px; padding:0">VENDOR: <br> MOOJANG BANDUNG</p>
+                        <p style="font-size:15px">4 x <strong>65.000</strong></p>
+                    </div>
+                    <div class="linecart"></div>
+                    <h6>Subtotal : <strong>Rp 260.000</strong></h6>
+                    <div class="linecart" style="width:300px"></div>
+                    <a href="viewcart.html" class="p-0"><button class="btn btn-danger mb-0" style="width:200px">VIEW CART</button></a>
+                    <a href="checkout.html" class="p-0"><button class="btn btn-brown" style="width:200px">CHECKOUT</button></a>
+                </div>
+              </div>
+        </section>
+    </body>
+</html>

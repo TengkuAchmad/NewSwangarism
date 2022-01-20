@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swangarism | Web Template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/modal-side-css.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sidepanel.js"></script>
+    <script src="js/autoscroll.js"></script>
+</head>
+    <body>
+        <div id="jsScroll" class="scroll" onclick="scrollToTop();">
+            <i class="fa fa-angle-up"></i>
+        </div>
+        <!-- Navbar -->
+        <section id="navbar">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-transparent mr-5 ml-5 mt-2 mb-3">
+                <div class="container">
+                     <!-- Logo -->
+                    <a class="navbar-brand" href="home.html">
+                        <img src="img/logo.jpeg" alt="" style="width: 200px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Search Form -->
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Bakso Malang" aria-label="Search">
+                      <span class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
+                            <i><img src="img/Search Icon 2 .png" style="width: 25px; height: 25px;" alt=""></i>
+                        </button>
+                        </span>
+                    </form>
+                    
+                    <!-- Navbar -->
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link swangarism" aria-current="page" href="home.html" style="font-size:25px;">BERANDA</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link swangarism" href="kategori.html" style="font-size:25px;">KATEGORI</a>
+                      </li>
+                      <li class="nav-item swangarism">
+                        <a class="nav-link" href="localsnack.html" style="font-size:25px;">JAJANAN LOKAL</a>
+                      </li>
+                      <li class="nav-item swangarism">
+                        <a class="nav-link" href="toko.html" style="font-size:25px;">TOKO</a>
+                      </li>			
+                    </ul>
+                    <a class="navbar-brand" href="#">
+                        <img onclick="openNav()" src="img/Cart Icon 3.png" width="30" height="30" alt="">
+                    </a>		  
+                </div>
+                </div>
+              </nav>
+        </section>
+        <section id="navhome">
+            <div class="boxnavhome">
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="boxnavhometxt">
+                        <h3>Makanan Beku</h3>
+                        <p>
+                            <span><a href="home.html">Home</a></span> / Makanan Beku
+                        </p>
+                    </div>
+                    <div class="me-auto p-2 bd-highlight"></div>
+                    <div class="p-2 bd-highlight" style="margin-top:20px; margin-right: 50px;">
+                        <div class="dropdown">
+                            <button class="btn btn-brown2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sort by Popularity
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Sort by Popularity</a></li>
+                              <li><a class="dropdown-item" href="#">Sort by Average Rating</a></li>
+                              <li><a class="dropdown-item" href="#">Sort by Latest</a></li>
+                              <li><a class="dropdown-item" href="#">Sort by price: low to high</a></li>
+                              <li><a class="dropdown-item" href="#">Sort by price: high to low</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 boxnavhometxt2">
+                    <div class="row" style="color: gray; margin-bottom: 20px;">
+                        <h6>BROWSE</h6>
+                        <div class="boxbelowtext2"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">#DukungUMKM</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Cemilan WFH</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Chocolate</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Hampers</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Healthy Diet</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Makanan Beku</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Makanan Ringan</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Makanan Siap Saji</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Makanan Segar</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">eKuliner</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Most Reviewed</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Plant Based</a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                    <div class="row">
+                        <a href="#"><strong>Produk Baru</strong></a>
+                        <div class="boxbelowtext"></div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="row" style="margin-top:40px">
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/1.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Joyfood Chicken Str...</h6>
+                                    <h6><b>Rp 35.000 - Rp 88.500</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/2.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Lupis Prayan by Mi...</h6>
+                                    <h6><b>Rp 35.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="row" style="margin-top:5px">
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/1.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Joyfood Chicken Str...</h6>
+                                    <h6><b>Rp 35.000 - Rp 88.500</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/2.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Lupis Prayan by Mi...</h6>
+                                    <h6><b>Rp 35.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="row" style="margin-top:5px">
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/1.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Joyfood Chicken Str...</h6>
+                                    <h6><b>Rp 35.000 - Rp 88.500</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/2.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Lupis Prayan by Mi...</h6>
+                                    <h6><b>Rp 35.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="row" style="margin-top:5px">
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/1.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Joyfood Chicken Str...</h6>
+                                    <h6><b>Rp 35.000 - Rp 88.500</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/2.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Lupis Prayan by Mi...</h6>
+                                    <h6><b>Rp 35.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="row" style="margin-top:5px">
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/1.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Joyfood Chicken Str...</h6>
+                                    <h6><b>Rp 35.000 - Rp 88.500</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/2.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Lupis Prayan by Mi...</h6>
+                                    <h6><b>Rp 35.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="row" style="margin-top:5px">
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/1.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Joyfood Chicken Str...</h6>
+                                    <h6><b>Rp 35.000 - Rp 88.500</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/2.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Lupis Prayan by Mi...</h6>
+                                    <h6><b>Rp 35.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col colspace2">
+                            <div class="boxproduct2">
+                                <img src="img/topsale/product/3.jpg" alt="">
+                                <div class="teks-produk2">
+                                    <h6>Roti Maryam Original</h6>
+                                    <h6><b>Rp 40.000</b></h6>
+                                    <button type="button" class="btn btn-sm btn-buy rounded-2">View Product</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section >
+            <div class="boxcontact">
+                <div class="row">
+                    <div class="col-6">
+                        <div style="margin-left: 80px;">
+                            <div class="row" style="margin-top: 20px; text-align:start;">
+                                <div class="col-2" style="padding: 0px;">
+                                    <a href="aboutus.html"><h6>ABOUT US</h6></a>
+                                </div>
+                                <div class="col-1" style="padding: 0px;">
+                                    <a href="#"><h6>FAQ</h6></a>
+                                </div>
+                                <div class="col-3" style="padding: 0px;">
+                                    <a href="#"><h6>KEBIJAKAN PRIVASI</h6></a>
+                                </div>
+                                <div class="linefooter"></div>
+                                <div style="padding-left: 0px; margin-top: 5px;">
+                                    © 2022 <strong>Swangarism</strong>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sidepanel">
+            <div id="mySidepanel" class="sidepanel" style="width: 350px;">
+                <a href="javascript:void(0)" class="closebtn2" onclick="closeNav()">
+                    <i class="fa fa-chevron-circle-right" style="font-size: 40px;"></i>
+                </a>
+                <div class="row text-center justify-content-center">
+                    <h5><strong>CART</strong></h5>
+                    <div class="lineboxside"></div>
+                </div>
+                <div class="row ml-4 mt-4 text-center justify-content-center">
+                    <div class="col-4">
+                        <img class="imagecart"src="img/productdtls/P1.jpg" alt="">
+                    </div>
+                    <div class="col-7 text-start">
+                        Paket Combo Dessert Box Jumbo 8x18 (Pre-Order) - OREO + Gratis Tiramisu
+                        <p style="font-size:10px; padding:0">VENDOR: <br> MOOJANG BANDUNG</p>
+                        <p style="font-size:15px">4 x <strong>65.000</strong></p>
+                    </div>
+                    <div class="linecart"></div>
+                    <h6>Subtotal : <strong>Rp 260.000</strong></h6>
+                    <div class="linecart" style="width:300px"></div>
+                    <a href="viewcart.html" class="p-0"><button class="btn btn-danger mb-0" style="width:200px">VIEW CART</button></a>
+                    <a href="checkout.html" class="p-0"><button class="btn btn-brown" style="width:200px">CHECKOUT</button></a>
+                </div>
+              </div>
+        </section>
+    </body>
+</html>
